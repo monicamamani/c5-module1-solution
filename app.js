@@ -10,8 +10,7 @@ angular.module('LunchCheck', [])
     if (  $scope.launch.length == 0){
       $scope.resultMessage = "Please enter data first";
     } else {
-      var array = $scope.launch.split(',');
-      console.log(array.length);
+      var array = $scope.launch.split(',');      
       if (array.length <= 3){
         $scope.resultMessage = "Enjoy!";
       } else {
@@ -21,11 +20,5 @@ angular.module('LunchCheck', [])
   };
 
 });
-
-
-
-
-
-console.log(DIController.toString());
 
 })();
